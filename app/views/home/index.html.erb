@@ -1,0 +1,6 @@
+<h1>Enter NOTAM:</h1>
+<%= form_tag("/results/notam", method: "post") do %>
+  <%= text_area_tag 'notam', nil, size: "70x30"%>
+  <br>
+  <%= submit_tag('Submit') %>
+<% end %>
